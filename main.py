@@ -39,12 +39,12 @@ async def start_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
 async def help_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
     await context.bot.send_chat_action(chat_id=update.effective_message.chat_id, action='typing')
     help_info = '''
-    /start - Start the bot.
-    /help - How to use the bot.
+/start - Start the bot.
+/help - How to use the bot.
     
-    This bot is trained on the Google search results, unlike Google that piles up all the websites and stuff, it will hand you back what you want in an instance.
+This bot is trained on the Google search results, unlike Google that piles up all the websites and stuff, it will hand you back what you want in an instance.
     
-    No more tedious explorations!
+No more tedious explorations! ✨
     '''
     await update.message.reply_text(help_info)
     
